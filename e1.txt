@@ -1,0 +1,47 @@
+lexeme = /*
+asdasda
+asdasd
+*/, token = COMENTARIO, value = 
+lexeme = int, token = INT, value = 
+lexeme = main, token = ID, value = main
+lexeme = (, token = APAR, value = 
+lexeme = ), token = FPAR, value = 
+lexeme = {, token = CHAVE_A, value = 
+lexeme = primeiro_num, token = ID, value = primeiro_num
+lexeme = =, token = OP_ATRIB, value = 
+lexeme = 1.0E12, token = NUM, value = 1
+lexeme = ;, token = PONTO_V, value = 
+lexeme = int, token = INT, value = 
+lexeme = p, token = ID, value = p
+lexeme = =, token = OP_ATRIB, value = 
+lexeme = 0, token = NUM, value = 0
+lexeme = *, token = OP_MULT, value = 
+lexeme = 0, token = NUM, value = 0
+lexeme = +, token = OP_SOMA, value = 
+lexeme = (, token = APAR, value = 
+lexeme = 33, token = NUM, value = 33
+lexeme = *, token = OP_MULT, value = 
+lexeme = 44, token = NUM, value = 44
+lexeme = ), token = FPAR, value = 
+lexeme = ;, token = PONTO_V, value = 
+lexeme = for, token = FOR, value = 
+lexeme = (, token = APAR, value = 
+lexeme = int, token = INT, value = 
+lexeme = p, token = ID, value = p
+lexeme = =, token = OP_ATRIB, value = 
+lexeme = 0, token = NUM, value = 0
+lexeme = ;, token = PONTO_V, value = 
+lexeme = p, token = ID, value = p
+lexeme = 45, token = NUM, value = 45
+lexeme = ;, token = PONTO_V, value = 
+lexeme = p, token = ID, value = p
+lexeme = +, token = OP_SOMA, value = 
+lexeme = +, token = OP_SOMA, value = 
+lexeme = ), token = FPAR, value = 
+lexeme = {, token = CHAVE_A, value = 
+lexeme = sss, token = ID, value = sss
+lexeme = =, token = OP_ATRIB, value = 
+lexeme = 45, token = NUM, value = 45
+lexeme = ;, token = PONTO_V, value = 
+lexeme = }, token = CHAVE_F, value = 
+lexeme = }, token = CHAVE_F, value = 

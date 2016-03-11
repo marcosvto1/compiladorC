@@ -1,0 +1,10 @@
+lexeme = begin, token = BEG, value = 
+lexeme = int, token = INT, value = 0
+lexeme = xxxp5, token = ID, value = xxxp5
+lexeme = :=, token = ASSIGNOP, value = 
+lexeme = 5, token = NUM, value = 5
+lexeme = #, token = ERROR, LINE ERRO = 1
+lexeme = ss, token = ID, value = ss
+lexeme = -, token = SUB, value = 
+lexeme = >, token = ERROR, LINE ERRO = 2
+lexeme = end, token = END, value = 

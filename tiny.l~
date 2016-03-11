@@ -1,0 +1,37 @@
+/* Scanner for Tiny--Lex/Flex specification */
+%{
+
+#include "tiny.tab.h"
+
+int value;
+int gLineNumber = 0;
+
+%}
+
+%option noyywrap
+
+letter                  [A-Za-z]
+digit                   [0-9]
+
+%%
+
+"int" 				{return INT;}	
+begin                           {return BEG;}
+end                             {return END;}
+read                            {return READ;}
+write                           {return WRITE;}     
+{letter}({letter}|{digit})*     {return ID;}
+{digit}+                        {value = atoi(yytext); return NUM;}
+":="                            {return ASSIGNOP;}
+"+"                             {return ADD;}
+"-"                             {return SUB;}
+";"                             {return SEMICOL;}
+"("                             {return LPAR;}
+")"                             {return RPAR;}
+[ \t\r]+                      	{/* do nothing-skip whitespace */}
+"{"[^}]*"}"                     {/* do nothing-skip comment */}
+.                               {value = gLineNumber; return ERROR;}
+[\n]        			{gLineNumber++;}         		
+
+
+%%
